@@ -59,8 +59,6 @@ python3 ht_penalization.py -lr 1e-2 -l2 0.0 -n 50 -d CIFAR10 -b 64 -m ResNet34 -
 # vgg13 + cifar10
 # sgd 
 python3 no_penalization.py -lr 1e-4 -n 50 -d CIFAR10 -b 64 -m VGG13 -r "model=VGG13,dataset=CIFAR10,no,id=1" --milestones 20 35 --lr_gamma 0.25 -reruns 3
-# sgd + l2 
-python3 l2_penalization.py -lr 1e-2 -l2 1e-4 -n 50 -d CIFAR10 -b 64 -m VGG13 -r "model=VGG13,dataset=CIFAR10,l2,id=1" --milestones 20 35 --lr_gamma 0.25 -reruns 3
 
 # vgg19 + cifar10
 # sgd 
